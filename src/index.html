@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passwords Generator</title>
+</head>
+<body>
+  <main class="page-main">
+    <h1 class="main-title">Passwords Generator</h1>
+    <section class="settings">
+      <h2 class="settings__title">Settings</h2>
+      <ul class="settings__list">
+        <li class="settings__item">
+          <span class="settings__name">Length:</span>
+          <select class="settings__select" name="lenght" id="settingsLength">
+            <option value="8" selected>8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+          </select>
+        </li>
+        <li class="settings__item">
+          <span class="settings__name">Include Symbols:</span>
+          <input type="checkbox" class="settings__checkbox" id="settingsSybmols" checked>
+          <label for="settingsSybmols">~`!@#$%^&*()_-+={[}]|\:;"'&lt;,>.?/</label>
+        </li>
+        <li class="settings__item">
+          <span class="settings__name">Include Numbers:</span>
+          <input type="checkbox" class="settings__checkbox" id="settingsNumbers" checked>
+          <label for="settingsNumbers" class="settings__label">0123456789</label>
+        </li>
+        <li class="settings__item">
+          <span class="settings__name">Include Lowercase Characters:</span>
+          <input type="checkbox" class="settings__checkbox" id="settingsLowercaseCharacters" checked>
+          <label for="settingsLowercaseCharacters" class="settings__label">abcdefghijklmopqrstuvwxyz</label>
+        </li>
+        <li class="settings__item">
+          <span class="settings__name">Include Uppercase Characters:</span>
+          <input type="checkbox" class="settings__checkbox" id="settingsUppercaseCharacters" checked>
+          <label for="settingsUppercaseCharacters" class="settings__label">ABCDEFGHIJKLMNOPQRSTUVWXYZ</label>
+        </li>
+      </ul>
+    </section>
+    <section class="generate">
+      <h2 class="generate__title">Output</h2>
+      <div class="generate__top">
+        <input type="text" class="generate__output" id="generated" readonly>
+        <button class="generate__copy" id="copyButton">Copy</button>
+      </div>
+      <div class="generate__bottom">
+        <button class="generate__button" id="generateButton">Generate</button>
+        <button class="generate__clear" id="clearButton">Clear</button>
+      </div>      
+    </section>
+  </main>
+  
+</body>
+</html>

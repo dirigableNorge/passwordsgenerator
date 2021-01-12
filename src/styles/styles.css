@@ -1,0 +1,56 @@
+/* noto-sans-regular - latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/noto-sans-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/noto-sans-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+}
+/* noto-sans-700 - latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/noto-sans-v11-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/noto-sans-v11-latin-700.woff') format('woff'), /* Modern Browsers */
+}
+
+body {
+  margin: 0;
+}
+
+.main-title {
+  font-family: 'Noto Sans', "Arial", sans-serif;
+  font-weight: 700;
+}
+
+.page-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.settings__title,
+.generate__title {
+  visibility: hidden;
+}
+
+.settings__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.settings__item {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.settings__name {
+  min-width: 300px;
+  font-family: "Noto Sans", "Arial", sans-serif;
+  font-size: 18px;
+}
+
